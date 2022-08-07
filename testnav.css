@@ -1,0 +1,375 @@
+:root{
+    --color-1: rgb(235, 232, 189);
+}
+body{
+    line-height: 1.6;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: cursive;
+}
+.header{
+    background-color: var(--color-1);
+    padding: 12px 0;
+    position: sticky;
+}
+.header .logo,
+.header .nav{
+    padding: 0 15px;
+}
+.header .logo a{
+    font-size: 40px;
+    color: #4d483e;
+    text-transform: capitalize;
+}
+.header .nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.header .nav ul li a{
+    display: block;
+    font-size: 20px;
+    padding: 10px 0;
+    color: rgba(31, 30, 27, 0.7);
+    text-transform: capitalize;
+    transition: all o.5s ease;
+}
+.header .nav ul li a:hover,
+.header .nav ul li a.active{
+    color: rgb(105, 72, 29);
+}
+.header #nav-check{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.nav-toggler{
+    height: 34px;
+    width: 44px;
+    background-color: rgb(240, 189, 96);
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.nav-toggler span{
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    position: relative;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    left: 0;
+}
+.nav-toggler span::before{
+    top: -6px;
+}
+.nav-toggler span::after{
+    top: 6px;
+}
+@media(max-width: 991px) {
+    .nav-toggler{
+        display: flex;
+    }
+    .header .nav{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: var(--color-1);
+        border-top: 1px solid rgba(31, 30, 27, 0.7);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header .nav ul li{
+        display: block;
+        margin: 0;
+    }
+    .header #nav-check:checked ~ .nav{
+        opacity: 1;
+        visibility: visible;
+    }
+    .header #nav-check:focus ~ .nav-toggler{
+        box-shadow: 0 0 15px #000000;
+    }
+    .header #nav-check:checked ~ .nav-toggler span{
+        background-color: transparent;
+    }
+    .header #nav-check:checked ~ .nav-toggler span::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .header #nav-check:checked ~ .nav-toggler span::after{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
+
+
+.front{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 70px;
+    font-family: cursive;
+}
+.about{
+    width: 100%;
+    padding: 70px 0px;
+    background-color: beige;
+}
+.about .main img{
+    height: 420px;
+    width: auto;
+    border:2px solid rgb(0, 0, 0);
+    box-shadow: rgba(248, 204, 83, 0.4) -5px 5px,
+    rgba(255, 212, 95, 0.4) -10px 10px,
+    rgba(252, 216, 119, 0.4) -15px 15px, 
+    rgba(253, 223, 141, 0.4) -20px 20px,
+    rgba(250, 234, 191, 0.4) -25px 25px;
+}
+.about-text{
+    width: 550px;
+}
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+.about-text h5{
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+    font-family: cursive;
+}
+@media (max-width: 768px)
+{
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main h2{
+        padding-top: 40px;
+    }
+}
+.liner {
+background:rgb(0, 0, 0,0.2);
+    height: 2px;
+    position: absolute;
+    width: 62%;
+    right: 17%;
+}
+
+.mem{
+    padding-top: 60px ;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+}
+.member { 
+    font-size: 35px;
+}
+ul{
+    list-style: none;
+}
+.member ul img{
+    border-radius: 100%;
+    height: 170px;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+    vertical-align: top;
+}
+ul.bmem{
+    
+        font-size: 0;
+        margin-left: -20px;
+        margin-right: -20px;
+        box-sizing: border-box;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 12%;
+        padding-right: 12%;
+        font-family: cursive;
+    
+}
+ul.bmem li.bmember{
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 40px 40px;
+    -ms-flex: 0 0 220px;
+    flex: 0 0 220px;
+    max-width: 220px;
+}
+ul.bmem li.bmember Span{
+display: block;
+font-size: 25px;
+color: #191919;
+margin: 20px 0 12px;
+text-align: center;
+}
+
+footer{
+    background-color: rgb(235, 232, 189);
+}
+footer p{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+}
+footer ul{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 100;
+}
+footer li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+footer  li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 40px;
+    transition: all ease-in-out 250ms;
+}
+footer li a:hover{
+    color: #f5ffdd;
+}
+footer ul li i{
+    align-items: center;
+}
+.aboutmembers{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 70px;
+    margin-top: 40px;
+    font-family:cursive
+}
+#abtmem img{
+    
+    margin-bottom:20px;
+    border-radius: 5%;
+    height: 320px;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, 
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#abtmem .mid{
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive
+}
+
+
+.dis{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 70px;
+    margin-top: 40px;
+    font-family: cursive;
+
+}
+.gotopbtn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: rgb(236, 182, 117);
+    bottom: 40px;
+    right: 50px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border-radius: 20%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+
+
+.discography{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.albums{
+    flex-basis: 33%;
+    font-family: cursive;
+
+}
+
+.albums img{
+    width:250px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-top: 20px;
+
+}
+.albums p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    padding: 0;
+
+}
+.albums h3{
+    padding-top: 20px;
+    font-size: 25px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
