@@ -24,7 +24,7 @@ ul{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    font-family: cursive;
+    font-family: Courier New;
 }
 .header{
     background-color: var(--color-1);
@@ -137,7 +137,7 @@ ul{
     text-align: center;
     font-size: 40px;
     padding-bottom: 70px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier New;
 }
 .about{
     width: 100%;
@@ -170,7 +170,7 @@ ul{
     font-size: 40px;
     text-transform: capitalize;
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier New;
 }
 .about-text h5{
     color: #000000;
@@ -184,7 +184,7 @@ ul{
     line-height: 28px;
     font-size: 20px;
     margin-bottom: 45px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Courier New;
 }
 @media (max-width: 700px)
 {
@@ -215,7 +215,7 @@ background:rgb(0, 0, 0,0.2);
     padding-bottom: 60px;
     text-align: center;
     font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier New;
 }
 .member { 
     font-size: 35px;
@@ -244,7 +244,7 @@ ul.bmem{
         align-items: flex-start;
         padding-left: 12%;
         padding-right: 12%;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: Courier New;
     
 }
 ul.bmem li.bmember{
@@ -302,7 +302,7 @@ footer ul li i{
     font-size: 40px;
     padding-bottom: 70px;
     margin-top: 40px;
-    font-family:'Courier New', Courier, monospace
+    font-family:Courier New;
 }
 #abtmem img{
     
@@ -325,7 +325,7 @@ footer ul li i{
     font-size: 40px;
     padding-bottom: 70px;
     margin-top: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier New;
 
 }
 .gotopbtn{
@@ -354,7 +354,7 @@ footer ul li i{
 }
 .albums{
     flex-basis: 33%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier New;
 
 }
 
