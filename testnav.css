@@ -24,7 +24,7 @@ ul{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
 }
 .header{
     background-color: var(--color-1);
@@ -94,7 +94,7 @@ ul{
 .nav-toggler span::after{
     top: 6px;
 }
-@media(max-width: 991px) {
+@media(max-width: 700px) {
     .nav-toggler{
         display: flex;
     }
@@ -137,11 +137,11 @@ ul{
     text-align: center;
     font-size: 40px;
     padding-bottom: 70px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
 }
 .about{
     width: 100%;
-    padding: 70px 0px;
+    padding-top: 70px;
     background-color: beige;
 }
 .about .main img{
@@ -155,7 +155,7 @@ ul{
     rgba(250, 234, 191, 0.4) -25px 25px;
 }
 .about-text{
-    width: 550px;
+    width: 500px;
 }
 .main {
     width: 1130px;
@@ -170,7 +170,7 @@ ul{
     font-size: 40px;
     text-transform: capitalize;
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
 }
 .about-text h5{
     color: #000000;
@@ -184,7 +184,7 @@ ul{
     line-height: 28px;
     font-size: 20px;
     margin-bottom: 45px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
 }
 @media (max-width: 700px)
 {
@@ -194,14 +194,12 @@ ul{
     }
     .main h2{
         padding-top: 40px;
-        margin-left: 10%;
     }
-    .main p{
-        width: 500px;
-        margin-left: 10%;
+    .about .main img{
+        height: 300px;
     }
-    .main h5{
-        margin-left: 10%;
+    .about .about-text{
+        width:fit-content
     }
 }
 .liner {
@@ -217,7 +215,7 @@ background:rgb(0, 0, 0,0.2);
     padding-bottom: 60px;
     text-align: center;
     font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
 }
 .member { 
     font-size: 35px;
@@ -246,7 +244,7 @@ ul.bmem{
         align-items: flex-start;
         padding-left: 12%;
         padding-right: 12%;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: cursive;
     
 }
 ul.bmem li.bmember{
@@ -272,7 +270,7 @@ footer p{
     padding-top: 10px;
     text-align: center;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
 }
 footer ul{
         margin: 0;
@@ -304,7 +302,7 @@ footer ul li i{
     font-size: 40px;
     padding-bottom: 70px;
     margin-top: 40px;
-    font-family:'Courier New', Courier, monospace;
+    font-family:cursive
 }
 #abtmem img{
     
@@ -318,7 +316,7 @@ footer ul li i{
 #abtmem .mid{
     text-align: center;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive
 }
 
 
@@ -327,7 +325,7 @@ footer ul li i{
     font-size: 40px;
     padding-bottom: 70px;
     margin-top: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
 
 }
 .gotopbtn{
@@ -356,7 +354,7 @@ footer ul li i{
 }
 .albums{
     flex-basis: 33%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
 
 }
 
@@ -385,5 +383,12 @@ footer ul li i{
     .discography .row    {
         display: flex;
         flex-direction: column;
+        width: fit-content;
+    }
+    .abtmem .mid{
+        width: fit-content;
     }
 }
+
+
+
