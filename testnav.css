@@ -389,15 +389,16 @@ footer ul li i{
         width: fit-content;
     }
     #abtmem .mid p{
-        font-size: 15px;   
+        font-size: 12px;   
     }
     .bot p{
-        font-size: 15px;
+        font-size: 12px;
     }
     .bot ul li a{
-        font-size: 25px;
+        font-size: 20px;
     }
-
+    .header .container .row .logo a{
+        font-size: 20px;
 }
 
 
