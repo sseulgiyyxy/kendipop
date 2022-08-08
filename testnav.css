@@ -354,10 +354,15 @@ footer ul li i{
 }
 .albums{
     flex-basis: 33%;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-
+.albums h3{
+     font-family: Arial, Helvetica, sans-serif;
+}
+.albums p{
+    font-family: Courier New;
+}
 .albums img{
     width:250px;
     border-radius: 10px;
